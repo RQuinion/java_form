@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacte</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <form class="form" id="contactForm">
+    <form class="form" id="contactForm">
         <div class="form__section">
             <div>
-                <input class="form__input" type="text" name="lastName" id="lastName" placeholder="Lastname">
-                <label class="error-message" for="lastName" id="lastNameError">Veuillez renseigner votre nom.</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Name">
+                <label class="error-message" for="name" id="nameError">Veuillez renseigner votre nom.</label>
             </div>
             <div>
                 <input class="form__input" type="tel" name="phone" id="phone" placeholder="Phone number">
@@ -24,8 +25,8 @@
                 <label class="error-message" for="email" id="emailError">Veuillez renseigner un email valide.</label>
             </div>
             <div>
-                <input class="form_input" type="password" name="password" id="password" placeholder="Enter password">
-                <label class="error-password" for="password" id="PasswordError">Veuillez renseigner un mot de passe valide.</label>
+                <input class="form__input" type="password" name="password" id="password" placeholder="Enter password">
+                <label class="error-message" for="password" id="passwordError">Veuillez renseigner un mot de passe valide.</label>
             </div>
         </div>
         <button class="form__submit" type="submit">Submit</button>
