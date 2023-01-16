@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form" id="contactForm">
+        <div class="form__section">
+            <div>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Name">
+                <label class="error-message" for="name" id="nameError">Veuillez renseigner votre nom.</label>
+            </div>
+            <div>
+                <input class="form__input" type="tel" name="phone" id="phone" placeholder="Phone number">
+                <label class="error-message" for="phone" id="phoneError">Veuillez renseigner un numéro de téléphone valide.</label>
+            </div>
+        </div>
+        <div class="form__section">
+            <div>
+                <input class="form__input" type="email" name="email" id="email" placeholder="Email address">
+                <label class="error-message" for="email" id="emailError">Veuillez renseigner un email valide.</label>
+            </div>
+            <div>
+                <input class="form__input" type="password" name="password" id="password" placeholder="Enter password">
+                <label class="error-message" for="password" id="passwordError">Veuillez renseigner un mot de passe valide.</label>
+            </div>
+        </div>
+        <div class="form__section">
+            <div>
+                <label for="pizza">Taille de la pizza</label>
+                <select name="pizza" id="pizza" required>
+                    <option value="">-- Taille de la pizza --</option>
+                    <option value="M" id="m">Taille M = 10e</option>
+                    <option value="L" id="l">Taille L = 15e</option>
+                    <option value="XL" id="xl">Taille XL = 20e</option>
+                </select>
+                <label class="error-message" for="pizza" id="pizzaError">Veuillez choisir une pizza.</label>
+            </div>
+            <div>
+                <label for="pizza">Ingrédients</label>
+                <select name="ingredient" id="ingredient">
+                    <option value="" required >-- Ingrédients --</option>
+                    <option value="viande" id="viande">Viandes = 7e</option>
+                    <option value="légume" id='legume'>Légumes = 5e</option>
+                    <option value="fromage" id='fromage'>Fromages = 3e</option>
+                </select>
+                <label class="error-message" for="ingredient" id="ingredientError">Veuillez choisir des ingredients.</label>
+            </div>
+        </div>
+        <div>
+            <div class="form__input--textarea__container">
+                <textarea class="form__input form__input--textarea" name="message" id="message" placeholder="Un commentaire ? "></textarea>
+                <label class="error-message" for="message" id="messageError">Veuillez renseigner votre message.</label>
+            </div>
+            <div class="form__input">
+                <input type="form__input" name="total" id="total" placeholder="Total">
+            </div>
+        </div>
+        <div class="form__section--submit">
+            <button class="form__submit" type="submit">Submit</button>
+            <button class="form__submit" type="reset">Reset</button>
+        </div>
+    </form>
+    <script src="./app.js"></script>
+</body>
+</html>
